@@ -99,8 +99,7 @@ body{
     background-color: #2180d8;
 }
 @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) {
+  and (min-device-width: 1200px)  {
 
     body{
         background-image: url('../img/bg/bg-laptop-1.png');

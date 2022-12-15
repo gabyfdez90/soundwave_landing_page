@@ -1,4 +1,4 @@
-import '../styles/index.css'
+// import '../styles/index.css'
 import logo from "../img/logo.svg"
 import {Link} from "react-router-dom"
 import Router from '../applications/Router';

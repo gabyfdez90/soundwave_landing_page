@@ -1,16 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Discover from '../pages/Discover'
+import Home from '../pages/Home'
 import Join from '../pages/Join'
 
-export const Router = () => {
+const Router = () => {
   return (
-    <BrowserRouter>
         <Routes>
-            <Route path="/discover" element={Discover}></Route>
-            <Route path="/join" element={Join}></Route>
+            <Route path="/" element={<Home/>} ></Route>
+            <Route path="/discover" element={<Discover/>}></Route>
+            <Route path="/join" element={<Join/>}></Route>
         </Routes>
-    </BrowserRouter>
   )
 }
 

@@ -1,4 +1,4 @@
-import '../styles/index.css'
+// import '../styles/index.css'
 import girl from "../img/landing-page-girl.png"
 import "../img/bg/bg-movil-1.png"
 import "../img/bg/bg-laptop-1.png"
