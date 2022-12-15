@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+
 *{
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	list-style:none;
 	list-style:none;
 	border: none;
 	outline: none;
@@ -15,6 +15,7 @@ body{
     margin:3rem;
     color:whitesmoke;
     background-color: #2F303A;
+    background-image: url('../img/bg/bg-movil-1.png');
 }
 .navbar {
     display: flex;
@@ -24,17 +25,19 @@ body{
     left: 0;
     right: 0;
     z-index:100;
-    margin:2rem 0;
+    color: whitesmoke;
 }
 
 .navbar__company {
     display: flex;
-    align-content: column;
     align-items: center;
 }
 
 .navbar-item {
     font-size: 1.2rem;
+}
+.navbar-item:hover {
+    color: #202027;
 }
 
 .navbar__logo{
@@ -52,9 +55,85 @@ body{
 
 .cover{
     display: flex;
-    
+    flex-direction: column;
+    justify-content: center;
+    height:75vh;
 }
 
 .cover__girl{
-    height: 75vh;
+    height: 60vh;
+    bottom:0;
+    position:absolute;
+    display: none;
 }
+
+.cover-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cover__title{
+    font-weight: 400;
+    font-size: 5vh;
+    max-width: 60%;
+}
+
+.cover__slogan{
+    font-weight: 100;
+    font-size: 2vh;
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+.cover__button{
+    max-width: fit-content;
+    padding: 0.5rem;
+    background-color: #1762A7;
+    border-radius: 10%;
+    color:white;
+}
+
+.cover__button:hover{
+    background-color: #2180d8;
+}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
+    body{
+        background-image: url('../img/bg/bg-laptop-1.png');
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .cover{
+        padding-top:27vh;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cover-box{
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-end;
+        height:100%;
+    }
+    .cover__girl{
+        display: inline;
+        margin-right:5vh;
+        position: inherit;
+        height:110%
+    }
+
+    .cover__title{
+        font-size: 8vh;
+        margin-bottom: 2vh;
+    }
+    .cover__slogan{
+        font-size: 3vh;
+    }
+  }
