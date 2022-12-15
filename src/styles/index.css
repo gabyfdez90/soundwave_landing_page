@@ -34,10 +34,7 @@ body{
 }
 
 .navbar-item {
-    font-size: 1.2rem;
-}
-.navbar-item:hover {
-    color: #202027;
+    font-size: 1rem;
 }
 
 .navbar__logo{
@@ -47,10 +44,16 @@ body{
 .navbar__list{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
 }
 
-.navbar-options{
-    margin: 2rem;
+a:visited{
+    color:white;
+}
+
+.navbar-item--active{
+    color:#BF3B84;
 }
 
 .cover{
