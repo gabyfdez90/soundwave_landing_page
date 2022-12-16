@@ -63,6 +63,38 @@ body{
     aspect-ratio: 1;
 }
 
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #202027;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.footer__left-side{
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__right-side{
+    display:flex;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.footer__right-side__twitter{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer__right-side__facebook{
+    display: flex;
+    gap: 0.5rem;
+}
+
 @media screen 
   and (min-width: 1200px) {
 
@@ -90,4 +122,11 @@ body{
         object-fit: cover;
         aspect-ratio: 1;
     }
+
+    .footer-container{
+        justify-content: center;
+        gap:25%;
+        padding: 1rem;
+    }
+
   }

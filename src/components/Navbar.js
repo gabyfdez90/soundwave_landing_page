@@ -1,7 +1,7 @@
 // import '../styles/index.css'
 import logo from "../img/logo.svg"
 import {Link, NavLink} from "react-router-dom"
-import Router from '../applications/Router';
+// import Router from '../applications/Router';
 import '../pages/Discover';
 import '../pages/Join';
 
